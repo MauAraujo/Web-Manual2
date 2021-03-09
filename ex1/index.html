@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Horoscopo</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="root">
+            <canvas id="stars" width="300" height="300"></canvas>
+            <div id="form">
+                <form action="./horoscopo.html" method="GET">
+                    <div class="form-item">
+                        <label for="name">Nombre</label>
+                        <input name="name" id="name" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="date">Fecha de nacimiento</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+
+                    <div class="form-item">
+                        <label for="gender">Sexo</label>
+                        <select name="gender" id="gender" required>
+                            <option>M</option>
+                            <option>F</option>
+                        </select>
+                    </div>
+
+                    <button class="form-item" type="submit">
+                        Aceptar
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+        <script src="scripts/stars.js"></script>
+    </body>
+</html>
