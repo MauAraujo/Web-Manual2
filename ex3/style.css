@@ -1,0 +1,51 @@
+h1 {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  gap: 1em 1em;
+  grid-template-areas:
+    ". . . ."
+    "Comentarios Comentarios Comentarios Comentarios"
+    ". Button Button .";
+}
+
+.Button {
+  grid-area: Button;
+}
+
+.grid-container div {
+  align-self: flex-start;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.grid-container div > h2,
+p {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.grid-container div p {
+  justify-content: space-evenly;
+}
+
+.Comentarios {
+  grid-area: Comentarios;
+}
+
+.Comentarios p {
+  justify-content: center !important;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}

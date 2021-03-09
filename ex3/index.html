@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catalogo de Arte</title>
+  </head>
+  <body>
+    <header>
+      <h1>Catálogo de Arte</h1>
+    </header>
+    <div class="root">
+      <form action="">
+        <div class="grid-container">
+          <div>
+            <h2>Obra</h2>
+            <p>
+              <label>Titulo:</label>
+              <input />
+            </p>
+            <p>
+              <label>Autor:</label>
+              <input />
+            </p>
+          </div>
+          <div>
+            <h2>Tipo</h2>
+            <p>
+              <label>
+                <input type="checkbox" id="tipo1" value="Escultura" />
+                Escultura
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" id="tipo2" value="Arquitectura" />
+                Arquitectura
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" id="tipo3" value="Pintura" />
+                Pintura
+              </label>
+            </p>
+          </div>
+          <div>
+            <h2>Disponibilidad</h2>
+            <p>
+              <label>
+                <input type="radio" name="public" value="public" /> Museo /
+                Propiedad Publica</label
+              >
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="private" value="private" /> Propiedad
+                Prvada</label
+              >
+            </p>
+          </div>
+          <div>
+            <h2>Estilo</h2>
+            <p>
+              <select required name="style">
+                <option>Clasico</option>
+                <option>Contemporaneo</option>
+              </select>
+            </p>
+          </div>
+          <div class="Comentarios">
+            <p>
+              <label>Haganos saber sus sugerencias:</label>
+              <textarea rows="5" cols="50"> </textarea>
+            </p>
+          </div>
+          <div class="Button">
+            <button>Buscar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
