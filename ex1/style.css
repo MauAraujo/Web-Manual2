@@ -1,76 +1,138 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #31102F;
-    background: radial-gradient(ellipse at center, rgba(49,16,47,1) 0%, rgba(40,11,41,1) 100%);
+  background-color: #31102f;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(49, 16, 47, 1) 0%,
+    rgba(40, 11, 41, 1) 100%
+  );
 }
 
 #form {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
 }
 
 .reading {
-    flex-direction: column;
-    justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 form {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    font-family: Montserrat;
-    color: #fff;
-    font-weight: 200;
-    font-style: normal;
-    margin-bottom: 20px;
-    font-size: 40px;
-    position: relative;
-    z-index: 2;
-    text-shadow: 0 0 50px #041727;
+  font-family: Montserrat;
+  color: #fff;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 20px;
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 50px #041727;
 }
 
 .form-item {
-    margin: 0.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.form-item > input, select {
-    max-width: 50%;
-    margin: 20px 0 0 0;
+.form-item > input,
+select {
+  max-width: 50%;
+  margin: 20px 0 0 0;
+  background-color: #dad3d9;
+  border: none;
+  padding: 0.5em;
+  font-family: inherit;
 }
 
 #stars {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 16rem;
-    height: 100vh;
-    z-index: 1;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 16rem;
+  height: 100vh;
+  z-index: 1;
 }
 
 .prediction-item {
-    font-family: Montserrat;
-    color: #fff;
-    font-weight: 200;
-    font-style: normal;
-    margin-bottom: 20px;
-    font-size: 40px;
-    position: relative;
-    z-index: 2;
-    text-shadow: 0 0 50px #041727;
+  font-family: Montserrat;
+  color: #fff;
+  font-weight: 200;
+  font-style: normal;
+  margin-bottom: 20px;
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 0 50px #041727;
+}
+
+button {
+  background-color: #dad3d9;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.signo {
+  /* width: 200px;
+  height: 200px; */
+  color: aqua;
+  fill: aqua;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: scale-down;
+  font-size: 200px;
+  /* background-image: url("icons/zodiac/magic circle.png");
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+
+.virgo {
+  /* background-image: url("icons/zodiac/svg/001-virgo.svg"); */
+  /* width: 100px;
+  height: 100px; */
+  color: aqua;
+  fill: aqua;
+}
+
+.rotate {
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
