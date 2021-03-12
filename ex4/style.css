@@ -1,0 +1,166 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font: bold 30px verdana, sans-serif;
+  text-align: center;
+}
+
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption,
+hgroup {
+  display: block;
+}
+body {
+  text-align: center;
+  height: 100vh;
+  /* background: #3f51b5; */
+}
+header {
+  background: #03a9f4;
+  padding: 20px;
+  margin: 1em 0px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid white;
+  bottom: 0;
+}
+
+form {
+  margin: 1em;
+}
+
+fieldset {
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid white;
+}
+
+legend {
+  font-size: 24px;
+}
+
+input,
+select,
+textarea {
+  text-decoration: none;
+  border: 1px solid #ccdbf0;
+  border-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: inherit;
+  font-size: large;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #ccdbf0;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+label {
+  font-family: inherit;
+  font-size: large;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  padding: 0.25em 0.5em;
+  margin: 0.25em 0.5em;
+  background-color: #03a9f4;
+  text-decoration: none;
+  border: none;
+}
+
+article {
+  background: #79bd99;
+  border: 2px solid #999999;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.background {
+  /* The image used */
+  background-image: url("asesoria.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#root {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  /* transform: translate(-60%, -60%); */
+  z-index: 2;
+  /* width: 80%; */
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  /* margin: 10px; */
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  margin: 0.5em 0px;
+  align-items: center;
+}
+
+.time p {
+  margin: 0px 0.9em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons {
+  margin: 3em 1em;
+}
+
+.show-data {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.show-data p {
+  text-transform: capitalize;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+}
+
+.show-data p label {
+  margin: 1px 1em;
+}

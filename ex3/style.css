@@ -1,0 +1,160 @@
+h1 {
+  text-align: center;
+  margin: 0px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #3f51b5;
+  font-family: Montserrat;
+}
+
+header {
+  top: 0px;
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 1em;
+}
+
+.grid-container {
+  background-color: white;
+  margin: 2em;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 0.5fr;
+  gap: 1em 1em;
+  grid-template-areas:
+    ". . . ."
+    "Comentarios Comentarios Comentarios Comentarios"
+    ". Button Button .";
+}
+
+.Button {
+  grid-area: Button;
+  justify-content: center;
+}
+
+.grid-container div {
+  align-self: flex-start;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 50px;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.grid-container div > h2,
+p {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container div p {
+  justify-content: space-evenly;
+}
+
+.Comentarios {
+  grid-area: Comentarios;
+}
+
+.Comentarios p {
+  justify-content: center !important;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+}
+
+input,
+select,
+textarea {
+  text-decoration: none;
+  border: 1px solid #ccdbf0;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-family: inherit;
+  font-size: medium;
+  margin: 0px 5px;
+}
+
+input:focus,
+select:focus {
+  background-color: #ccdbf0;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Search */
+
+.card {
+  width: 400px;
+  background-color: white;
+  margin: auto;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.card-title {
+  padding: 5px;
+  text-align: center;
+}
+
+.card-title > h2,
+h3,
+h4 {
+  margin: 2px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 10px 0px !important;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.label {
+  text-transform: capitalize;
+  border-radius: 15px;
+  background-color: #ccdbf0;
+  padding: 0.3em 0.5em;
+  margin: 0.2em;
+}
+
+.not-found {
+  padding: 0.25em 0.5em;
+  border-radius: 5px;
+  border: 3px solid #f44336;
+  color: #f44336;
+  font-size: large;
+}
+
+.card-comments {
+  margin: 0px 5px;
+}
+
+button {
+  background-color: #2196f3;
+  color: white;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}

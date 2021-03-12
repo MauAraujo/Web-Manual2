@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catalogo de Arte</title>
+  </head>
+  <body>
+    <header>
+      <h1>Catálogo de Arte</h1>
+    </header>
+    <div class="root">
+      <form action="./search.html" method="GET">
+        <div class="grid-container">
+          <div>
+            <h2>Obra</h2>
+            <p>
+              <label>Titulo:</label>
+              <input name="title" required />
+            </p>
+            <p>
+              <label>Autor:</label>
+              <input name="author" />
+            </p>
+          </div>
+          <div>
+            <h2>Tipo</h2>
+            <p>
+              <label>
+                <input
+                  type="checkbox"
+                  id="tipo1"
+                  value="Escultura"
+                  name="sculpture"
+                />
+                Escultura
+              </label>
+            </p>
+            <p>
+              <label>
+                <input
+                  type="checkbox"
+                  id="tipo2"
+                  value="Arquitectura"
+                  name="arquitecture"
+                />
+                Arquitectura
+              </label>
+            </p>
+            <p>
+              <label>
+                <input
+                  type="checkbox"
+                  id="tipo3"
+                  value="Pintura"
+                  name="painting"
+                />
+                Pintura
+              </label>
+            </p>
+          </div>
+          <div>
+            <h2>Disponibilidad</h2>
+
+            <p>
+              <label>
+                <input
+                  required
+                  type="radio"
+                  name="disponibility"
+                  value="public"
+                  name="disponibility"
+                />
+                Museo / Propiedad Publica</label
+              >
+            </p>
+            <p>
+              <label>
+                <input
+                  required
+                  type="radio"
+                  name="disponibility"
+                  value="private"
+                  name="disponibility"
+                />
+                Propiedad Prvada</label
+              >
+            </p>
+          </div>
+          <div>
+            <h2>Estilo</h2>
+            <p>
+              <select required name="style">
+                <option>Clasico</option>
+                <option>Contemporaneo</option>
+              </select>
+            </p>
+          </div>
+          <div class="Comentarios">
+            <p>
+              <label>Haganos saber sus sugerencias:</label>
+              <textarea rows="5" cols="50" name="comments"> </textarea>
+            </p>
+          </div>
+          <div class="Button">
+            <button type="submit">Buscar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <!-- <script src="script.js"></script> -->
+</html>

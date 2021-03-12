@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Catalogo de Arte</title>
+  </head>
+  <body>
+    <header>
+      <h1>Catálogo de Arte</h1>
+    </header>
+    <div class="root">
+      <div class="card">
+        <div class="card-title">
+          <h2>Busqueda</h2>
+          <h3 id="title">Titulo</h3>
+          <h4 id="author">Autor</h4>
+        </div>
+        <div class="card-content">
+          <p id="labels"></p>
+          <p id="disponibility">🔒 Privado</p>
+          <p>
+            <strong>Comentarios:</strong>
+            <span id="comments" class="card-comments"></span>
+          </p>
+          <p><span class="not-found">Sin resultados</span></p>
+          <p><button onclick="goHome()">Regresar</button></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
