@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="App Web de Tutorias" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Web Tutorias</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div id="root">
+      <header>
+        <h1>Formulario Digital de Asesorias</h1>
+      </header>
+
+      <form id="form" action="show.html" method="get">
+        <fieldset>
+          <legend align="center">Datos del Alumno-Profesor</legend>
+          <p>
+            <label for="student">Alumno:</label>
+            <input
+              type="text"
+              id="student"
+              name="student"
+              size="60"
+              placeholder="Ingrese Nombre Completo"
+              required
+            />
+          </p>
+          <p>
+            <label for="teacher">Profesor: </label>
+            <select id="teacher" name="teacher" required>
+              <optgroup label="Área de Programación">
+                <option value="MarioR">Mario Rossainz López</option>
+                <option value="PedroB">Pedro Bello López</option>
+                <option value="BeatrizB">Beatríz Beltrán Martínez</option>
+                }
+                <option value="AndresV">Andrés Vázquez Flores</option>
+                <option value="EtelvinaA">Etelvina Archundia Sierra</option>
+              </optgroup>
+              <optgroup label="Área de Bases de Datos">
+                <option value="MireyaT">Mireya Tovar Vidal</option>
+                <option value="MelizaC">Meliza Contreras González</option>
+                <option value="JuanMC">Juan Manuel Calleros</option>
+                }
+              </optgroup>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend align="center">Datos de la Asesoría</legend>
+          <p>
+            <label for="day">Día: </label>
+            <select id="day" name="day" required>
+              <option value="lunes">Lunes</option>
+              <option value="martes">Martes</option>
+              <option disabled value="miercoles">Miercoles</option>
+              }
+              <option value="jueves">Jueves</option>
+              <option value="viernes">Viernes</option>
+            </select>
+          </p>
+
+          <div class="time">
+            <p>
+              <label>Hora: </label>
+            </p>
+
+            <p>
+              <label for="nine">9 hrs </label>
+              <input type="radio" id="nine" name="hour" required value="9" />
+            </p>
+            <p>
+              <label for="eleven">11 hrs </label>
+              <input
+                disabled
+                type="radio"
+                id="eleven"
+                name="hour"
+                required
+                value="11"
+              />
+            </p>
+            <p>
+              <label for="thirteen">13 hrs </label>
+              <input
+                type="radio"
+                id="thirteen"
+                name="hour"
+                required
+                value="13"
+              />
+            </p>
+            <p>
+              <label for="fifteen">15 hrs </label>
+              <input
+                type="radio"
+                id="fifteen"
+                name="hour"
+                required
+                value="15"
+              />
+            </p>
+            <p>
+              <label for="seventeen">17 hrs </label>
+              <input
+                type="radio"
+                id="seventeen"
+                name="hour"
+                required
+                value="17"
+              />
+            </p>
+          </div>
+
+          <label for="subject">Asunto:</label><br />
+          <textarea
+            required
+            id="subject"
+            name="subject"
+            rows="5"
+            cols="40"
+            placeholder="Escriba aquí el asunto"
+          ></textarea>
+        </fieldset>
+
+        <div class="buttons">
+          <button type="submit">Enviar</button>
+          <button type="reset">Resetear</button>
+        </div>
+      </form>
+
+      <footer>
+        <small>
+          Todos los derechos reservados &copy; Mauricio Araujo & Noé Osorio
+        </small>
+      </footer>
+    </div>
+  </body>
+</html>
