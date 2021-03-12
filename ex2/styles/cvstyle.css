@@ -1,0 +1,84 @@
+html, body {
+    font-family: Montserrat;
+    color: #262b33;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    align-items: center;
+    /*background-color: #35297B;*/
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    max-width: 736px;
+    margin: 0 auto 64px;
+    text-align: center;
+    font-size: 40px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.cv-form{
+    height: 100vh;
+}
+
+.cv-tips, .cv-form {
+    width: 100%;
+    max-width: 1208px;
+    padding-left: 44px;
+    padding-right: 44px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-container {
+    font-size: 24px;
+    background-color: #f2f5fa;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 0.5fr 0fr 0.5fr 0fr 0.3fr 0fr 0.5fr;
+    gap: 10px 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        ". ."
+        ". ."
+        ". .";
+}
+
+.languages, .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 64px 10px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+}

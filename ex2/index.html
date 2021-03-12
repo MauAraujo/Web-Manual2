@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Reclutamiento</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="./icons/fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    </head>
+    <body>
+        <div class="cv-form">
+            <h2>Ingresa tus datos</h2>
+            <form action="cv.html">
+                <h3>Nombre</h3>
+                <div class="form-item">
+                    <input name="name" id="name" class="rounded-input">
+                </div>
+                <h3>Edad</h3>
+                <div class="form-item">
+                    <input name="age" id="age" class="rounded-input">
+                </div>
+                <h3>Universidad</h3>
+                <div class="form-item">
+                    <input name="uni" id="uni" class="rounded-input">
+                </div>
+                <h3>Carrera</h3>
+                <div class="form-item">
+                    <input name="career" id="career" class="rounded-input">
+                </div>
+                <h3>Idiomas</h3>
+                <div class="form-item checkbox">
+                    <div class="checkbox-inner">
+                        <div>
+                            <label class="container" for="languages1">Inglés
+                                <input type="checkbox" name="languages1" id="languages1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="languages2">Alemán
+                                <input type="checkbox" name="languages2" id="languages2">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="languages3">Francés
+                                <input type="checkbox" name="languages3" id="languages3">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkbox-inner">
+                        <div>
+                            <label class="container" for="languages4">Japonés
+                                <input type="checkbox" name="languages4" id="languages4">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="languages5">Mandarín
+                                <input type="checkbox" name="languages5" id="languages5">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <h3>Nivel de inglés</h3>
+                <div class="form-item checkbox">
+                    <div class="checkbox-inner">
+                        <div>
+                            <label class="container" for="english1">A1
+                                <input type="radio" name="english" id="english1" value="A1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="english2">A2
+                                <input type="radio" name="english" id="english2" value="A2">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="english3">B1
+                                <input type="radio" name="english" id="english3" value="B1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkbox-inner">
+                        <div>
+                            <label class="container" for="english4">B2
+                                <input type="radio" name="english" id="english4" value="B2">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="english5">C1
+                                <input type="radio" name="english" id="english5" value="C1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="english6">C2
+                                <input type="radio" name="english" id="english6" value="C2">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <h3>Áreas de interés</h3>
+                <div class="form-item checkbox">
+                    <div class="checkbox-inner">
+                        <div>
+                            <label class="container" for="skills1">Web/Frontend
+                                <input type="checkbox" name="skills1" id="skills1">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="skills2">Backend/Scripting
+                                <input type="checkbox" name="skills2" id="skills2">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="skills3">Sistemas
+                                <input type="checkbox" name="skills3" id="skills3">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="checkbox-inner">
+                        <div>
+                            <label class="container" for="skills4">JVM
+                                <input type="checkbox" name="skills4" id="skills4">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="container" for="skills5">Móvil
+                                <input type="checkbox" name="skills5" id="skills5">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="success-container">
+                    <button type="button" onclick="triggerAnimation();" class="button">Enviar datos</button>
+                    <div class="success-group">
+                        <svg id="successAnimation" class="success" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                            <path id="successAnimationResult" fill="#D8D8D8" d="M35,60 C21.1928813,60 10,48.8071187 10,35 C10,21.1928813 21.1928813,10 35,10 C48.8071187,10 60,21.1928813 60,35 C60,48.8071187 48.8071187,60 35,60 Z M23.6332378,33.2260427 L22.3667622,34.7739573 L34.1433655,44.40936 L47.776114,27.6305926 L46.223886,26.3694074 L33.8566345,41.59064 L23.6332378,33.2260427 Z"/>
+                            <circle id="successAnimationCircle" cx="35" cy="35" r="24" stroke="#979797" stroke-width="2" stroke-linecap="round" fill="transparent"/>
+                            <polyline id="successAnimationCheck" stroke="#979797" stroke-width="2" points="23 34 34 43 47 27" fill="transparent"/>
+                        </svg>
+                        <h3 id="successMessage" class="success">Datos enviados!</h3>
+                    </div>
+                </div>
+                <div class="form-item buttons">
+                    <button type="reset" class="button">Limpiar formulario</button>
+                    <button type="submit" class="button">Mostrar CV</button>
+                </div>
+            </form>
+
+        <div class="cv-tips">
+            <h2>Tips para escribir tu CV</h2>
+            <div class="tips">
+                <div class="tip-container">
+                    <i class="fas fa-industry  fa-3x"></i>
+                    <div class="tip">Entiende los estándares de tu industria</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-building  fa-3x"></i>
+                    <div class="tip">Familiarizate con el tono de la compañía</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-portrait  fa-3x"></i>
+                    <div class="tip">Decide en la imágen propia que vas a presentar</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-graduation-cap  fa-3x"></i>
+                    <div class="tip">Reflexiona acerca de los aspectos más importantes para tu carrera</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-pen-nib  fa-3x"></i>
+                    <div class="tip">Piensa en las secciones en las que tendrás que escribir más</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-handshake  fa-3x"></i>
+                    <div class="tip">Evalúa la presentación y atractivo de la plantilla que utilices</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-icons  fa-3x"></i>
+                    <div class="tip">Pon atención a si los colores e íconos son apropiados para tu industria</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-camera  fa-3x"></i>
+                    <div class="tip">Revisa que tengas espacio suficiente si agregarás una foto o logo</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-highlighter  fa-3x"></i>
+                    <div class="tip">Analiza la sección más llamativa y asegúrate que cubre tus necesidades</div>
+                </div>
+                <div class="tip-container">
+                    <i class="fas fa-file-signature  fa-3x"></i>
+                    <div class="tip">Elige un cv que capture tu estilo personal y se sienta bien para ti</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/job.js"></script>
+    </body>
+</html>
